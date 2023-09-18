@@ -20,9 +20,9 @@ function buyItem(itemName, itemPrice) {
         updateCoinCount();
 
         // Personalizar o link de e-mail com o título da mercadoria
-        var emailSubject = 'Compra de ' + itemName;
+        var emailSubject = 'Sara comprou: ' + itemName;
         var emailRecipient = 'ryanloopes25@gmail.com'; // Substitua pelo seu endereço de e-mail
-        var emailBody = 'Olá, gostaria de confirmar a compra do item: ' + itemName;
+        var emailBody = 'AMORRRR!! você comprou ' + itemName + ' na lojinha do touche!? (aperte em enviar para eu ver sua compra!!)';
 
         var emailLink = 'mailto:' + emailRecipient + '?subject=' + encodeURIComponent(emailSubject) + '&body=' + encodeURIComponent(emailBody);
         var emailElement = document.createElement('a');
