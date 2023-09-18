@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css" />
+    <title>Lojinha</title>
+</head>
+
+<body class="body-lojinha">
+    <div class="frase-intro">
+        <img class="loading-gif" src="../img/Meu Vídeo.gif" alt="">
+        <div class="carregando-galeria">Curiosidade:</div>
+        <div class="descricao-ceu">Sara e Ryan se encontraram durante uma batalha e, apesar das dificuldades, se
+            apaixonaram. Eles superaram problemas juntos, mostrando que o amor pode nascer em momentos difíceis e
+            continuar mesmo quando as coisas são complicadas.</div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="topo-loja">
+                <div><a href="../index.html" class="voltar_btn">Voltar</a></div>
+                <div class="coins">Amoe points $<span id="coinCount">0</span></div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="caixa-mercado">
+            <div class="lojinha">
+                <div class="mercadoria" onclick="buyItem('Tirar dúvida', 5)">
+                    <div class="titulo-mercadoria">
+                        Tirar dúvida
+                    </div>
+                    <img class="img-mercadoria" src="../img/itensloja/03.gif">
+                    <div class="titulo-mercadoria">5 amoepoints</div>
+                </div>
+                <div class="mercadoria" onclick="buyItem('Abraço', 10)">
+                    <div class="titulo-mercadoria">
+                        Abraço
+                    </div>
+                    <img class="img-mercadoria" src="../img/itensloja/02.gif">
+                    <div class="titulo-mercadoria">10 amoepoints</div>
+                </div>
+                <div class="mercadoria" onclick="buyItem('Multiplos beijos', 20)">
+                    <div class="titulo-mercadoria">
+                        Multiplos beijos
+                    </div>
+                    <img class="img-mercadoria" src="../img/itensloja/01.gif">
+                    <div class="titulo-mercadoria">20 amoepoints</div>
+                </div>
+                <div class="mercadoria" onclick="buyItem('Dançar muito kkk', 35)">
+                    <div class="titulo-mercadoria">
+                        Dançar muito kkk
+                    </div>
+                    <img class="img-mercadoria" src="../img/itensloja/04.gif">
+                    <div class="titulo-mercadoria">35 amoepoints</div>
+                </div>
+                <div class="mercadoria" onclick="buyItem('Dormir junto', 100)">
+                    <div class="titulo-mercadoria">
+                        Dormir junto
+                    </div>
+                    <img class="img-mercadoria" src="../img/itensloja/05.gif">
+                    <div class="titulo-mercadoria">100 amoepoints</div>
+                </div>
+                <div class="mercadoria" onclick="buyItem('Um desejo!', 350)">
+                    <div class="titulo-mercadoria">
+                        Um desejo!
+                    </div>
+                    <img class="img-mercadoria" src="../img/itensloja/06.gif">
+                    <div class="titulo-mercadoria">350 amoepoints</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <section>
+            <div class="container">
+                <div class="box">
+                    <div class="dialogo">
+                        <div class="carregando-galeria" style="text-align: start;animation: name 2s infinite;z-index: -1;margin-bottom: 5%;">Touché</div>Olá eu sou o touché! o
+                        logista real, A princesa sara me criou a muuuito tempo!! Estou aqui para ajudar. Sinta-se à
+                        vontade para me contar o que precisa.
+                    </div>
+                    <div><img class="perfil" src="../img/Logista.gif"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Modal de Saldo Insuficiente -->
+    <div id="insufficientModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('insufficientModal')">&times;</span>
+            <p>Amoepoints Insuficientes! Clique no touche para adquirir Amoepoints!</p>
+        </div>
+    </div>
+
+    <!-- Modal de Compra realizada com sucesso -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('successModal')">&times;</span>
+            <p>Compra realizada com sucesso!</p>
+        </div>
+    </div>
+
+    <script src="../CSS/script.js"></script>
+</body>
+
+</html>

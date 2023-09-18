@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*home*/
+.body-home {
+    background-image: url(../img/fundoHome02.gif);
+    background-size: cover;
+    background-position: right;
+}
+
+.play {
+    display: table;
+    margin: 100% auto;
+}
+
+.play-button {
+    font-size: 60px;
+    text-decoration: none;
+    color: white;
+    background-color: #1d0042b0;
+    padding: 50px;
+    border-radius: 100px;
+    border: solid 5px;
+}
+
+
+.itens-barra-inferior {}
+
+.lista {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.iten-lista {
+    font-weight: bolder;
+    font-size: 22px;
+    background: #010000;
+    padding: 0px 25px 25px 25px;
+    border-radius: 0px 0px 100px 100px;
+    text-align: center;
+    font-family: emoji;
+    box-shadow: 0px 0px 20px 20px #020101;
+    color: #7d00f3;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.iten-lista:hover {
+    color: aqua;
+    transition: 1s;
+}
+
+.container {}
+
+.barra-inferior {
+    height: 90px;
+    background-color: #6300c3;
+    width: 100%;
+    animation: backanimhome 2s;
+}
+
+@keyframes backanimhome {
+    0% {
+        height: 5px;
+    }
+
+}
+
+/*fim home*/
+
+/*Galeria*/
+.body-galeria {
+    background-image: url(../img/fundoGaleria.gif);
+}
+
+.voltar_btn {
+    font-family: arial;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.titulo_galeria {
+    text-align: center;
+    color: ghostwhite;
+    margin-bottom: 50px;
+}
+
+.caixa-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fotos {
+    width: 180px;
+    height: 200px;
+    margin: 3px;
+    border: solid;
+}
+
+.best-foto {
+    background: linear-gradient(to bottom, #0000009c, #0000009c), url(../img/Fotos/11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-changing-line {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, black, #6300c3);
+    background-size: 200% 100%;
+    animation: colorChange 2s linear infinite;
+    margin: auto 0 0;
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.loading-gif {
+    width: 100%;
+    height: 30%;
+    margin-top: 50%;
+}
+
+.carregando-galeria {
+    color: #7d00f3;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.descricao-ceu {
+    color: azure;
+    text-align: center;
+    font-family: arial;
+    padding: 0 15px;
+}
+
+.frase-intro {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #010000;
+    position: fixed;
+    animation: apareca 15s;
+    z-index: 9999;
+}
+
+@keyframes apareca {
+    0% {
+        visibility: visible;
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*FIM Galeria*/
+/*Loja*/
+.body-lojinha {
+    background-color: #df4397;
+}
+
+.coins {
+    font-size: 21px;
+    font-family: arial;
+    color: aliceblue;
+    padding: 5px 24px;
+    background: #df4397;
+    border-radius: 100px;
+    border: solid 3px black;
+}
+
+.topo-loja {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f39cce;
+}
+
+.caixa-mercado {
+    background: #df4397;
+    padding: 3% 5% 3%;
+}
+
+.mercadoria {
+    width: 130px;
+    height: 160px;
+    margin: 1%;
+    text-align: center;
+    font-family: arial;
+    border: solid;
+    border-radius: 20px;
+    font-size:10px;
+}
+
+.img-mercadoria {
+    width: 100%;
+    height: 70%;
+    border-radius: 25px;
+}
+
+.titulo-mercadoria {
+    background-color: #df4397;
+    border: solid;
+    border-radius: 30px;
+    border-top: none;
+}
+
+.lojinha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-color: #f39cce;
+    border: solid 2px black;
+    border-radius: 15px;
+}
+
+.box {
+    display: flex;
+    padding: 15px;
+    background-color: #f39cce;
+    z-index: -1;
+}
+
+.dialogo {
+    width: 190%;
+    font-size: 17px;
+    padding: 0px 15px 0px 0px;
+    font-family: arial;
+}
+
+.perfil {
+    width: 100%;
+    border-radius: 100px;
+    border: solid 2px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/*FIM Loja*/
+/*Info*/
+.body-info{
+    background: linear-gradient(180deg, #f6816a, #bc75ff);
+}
+.digitando-header {
+    white-space: pre;
+    overflow: hidden;
+    border-right: none;
+    font-size: 16px;
+    animation: typing 5s steps(40);
+    margin: auto;
+    margin-top: 10%;
+}
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+        border-right: 0.15em solid black;
+    }
+}
+
+.digitando-header-sub {
+    white-space: pre;
+    overflow: hidden;
+    border-right: none;
+    font-size: 18px;
+    animation: typing2 5s steps(40);
+    margin: auto;
+}
+
+@keyframes typing2 {
+
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100%{
+        width: 35%;
+        border-right: 0.15em solid black;
+    }
+}
+
+.header{
+    text-align: center;
+    background: linear-gradient(180deg, #ee4422, #ee44224a), url(../img/fundoHome.gif);
+    padding-bottom: 15%;
+    font-family: arial;
+}
+
+.text-box{
+    padding: 30px 15px;
+}
+
+.info-title{
+    text-align: center;
+    font-size: 40px;
+    color: #6300c3;
+    font-family: arial;
+}
+
+.info-text{
+    font-size: 25px;
+    font-family: arial;
+}
+
+/*fim info */
+
+.play-body{
+    background-image: url(../img/8351230.gif);
+    background-position: 30% 10%;
+}
+
+.campo-love {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.nickname{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    background-color: #b172ff;
+    width: 45%;
+    font-family: arial;
+    margin: 3% auto;
+    padding: 2%;
+    border-radius: 20px;
+    border: solid 3px black;
+    animation: name 2s infinite;
+}
+
+@keyframes name {
+
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+
+.img-anim{
+width: 45%;
+}
+
+.anim {
+    text-align: center;
+    margin: -1%;
+}
+
+.compotxt {
+    padding: 15px 15px 15px 15px;
+    border: solid 2px black;
+    background-color: #b172ff;
+    margin: 0% 5%;
+    font-family: arial;
+    font-size: 20px;
+    border-radius: 35px;
+}
+
+.btn-prox-text{
+    padding: 10px 30px;
+    font-family: arial;
+    margin: 10px 20px;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #f766b4;
+    font-weight: bolder;
+}
+
+.volta-play{
+    padding: 5px;
+    background: #b172ff;
+    border: solid 2px black;
+    border-radius: 15px;
+    color: currentcolor;
+}
+
+.Controle-play{
+display: flex;
+}
+
+.escolha{
+    margin: auto;
+}
