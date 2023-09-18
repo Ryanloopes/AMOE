@@ -21,7 +21,7 @@ function buyItem(itemName, itemPrice) {
 
         // Personalizar o link de e-mail com o título da mercadoria
         var emailSubject = 'Compra de ' + itemName;
-        var emailRecipient = 'seu_email@seu_domínio.com'; // Substitua pelo seu endereço de e-mail
+        var emailRecipient = 'ryanloopes25@gmail.com'; // Substitua pelo seu endereço de e-mail
         var emailBody = 'Olá, gostaria de confirmar a compra do item: ' + itemName;
 
         var emailLink = 'mailto:' + emailRecipient + '?subject=' + encodeURIComponent(emailSubject) + '&body=' + encodeURIComponent(emailBody);
